@@ -1,0 +1,21 @@
+/* Thiết lập Tailwind CSS directive và custom classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hiệu ứng text gradient màu xám bạc ánh kim đặc trưng cho tiêu đề Hero */
+  .hero-heading {
+    background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Cấu hình màu nền đen #0C0C0C và font chữ Kanit chuẩn toàn bộ ứng dụng */
+html, body, #root {
+  background-color: #0C0C0C;
+  color: #D7E2EA;
+  font-family: 'Kanit', sans-serif;
+  min-height: 100vh;
+}
